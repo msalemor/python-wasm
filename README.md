@@ -8,7 +8,13 @@
   - https://wasmer.io/posts/wasmer-python-embedding-1.0
   - https://github.com/wasmerio/wasmer-python/tree/master/examples/appendices
 
-## Performance
+## What is WASM?
+
+## What is WASMER?
+
+## What can I gain from using WASM in Python
+
+### Performance
 
 Mandelbrot settings:
 
