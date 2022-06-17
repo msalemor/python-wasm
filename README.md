@@ -85,7 +85,7 @@ instance.exports.deallocate(mandel_out_ptr, out_size)
 print("--- %s seconds ---" % (time.time() - start_time))
 ```
 
-## Rust WASM implementation
+## Rust Mandelbrot WASM implementation
 
 ```Rust
 type Fl = f32; // f32 is slightly faster than f64
@@ -127,14 +127,12 @@ pub extern "C" fn mandel(w: i32, h: i32, max: i32) -> *mut c_char {
         for _w in 0..w {
             let x = -2.0 + ((_w as Fl) * step_w);
             let mz = mandelzahl(x, y, max);
-            //print!("{}", if mz > 0 { '-' } else { '*' });
             if mz > 0 {
                 output.extend(&[b'-']);
             } else {
                 output.extend(&[b'*']);
             }
         }
-        //println!("");
         output.extend(&[b'\n'])
     }
     unsafe { CString::from_vec_unchecked(output) }.into_raw()
