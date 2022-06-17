@@ -39,8 +39,8 @@ Mandelbrot settings:
 
 Average Measurements:
 
-- Native Python: 24s
-- Using the WASM implenetation: 0.6s
+- Native Python: 24 seconds
+- Using the WASM implenetation: 0.6 seconds
 
 ### Portability
 
