@@ -26,6 +26,11 @@ From the Wasmer for Python docs:
 
 ### Performance
 
+System:
+- Inteil i7
+- 12 Cores
+- 32GB RAM
+
 Mandelbrot settings:
 
 - Width: 140
