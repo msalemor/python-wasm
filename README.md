@@ -12,13 +12,13 @@
 
 ## What is WASM?
 
-From the main site:
+From the WebAssembly.org site:
 
 "WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications."
 
 ## What is WASMER for Python?
 
-From their docs:
+From the Wasmer for Python docs:
 
 "The wasmer package brings the required API to execute WebAssembly modules. In a nutshell, wasmer compiles the WebAssembly module into compiled code, and then executes it. wasmer is designed to work in various environments and platforms: From nano single-board computers to large and powerful servers, including more exotic ones. To address those requirements, Wasmer provides 2 engines and 3 compilers."
 
