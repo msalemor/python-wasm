@@ -37,6 +37,12 @@ Average Measurements:
 - Native Python: 22s
 - Using the WASM implenetation: 0.6s
 
+### Portability
+
+- The WASM module can be run from any operating system 
+- It be embedded in different languages (C#, Javascript, Go, Java, etc.)
+
+
 ## Calling WASM from Python
 
 ```Python
