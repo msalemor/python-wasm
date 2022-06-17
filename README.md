@@ -4,11 +4,11 @@
 
 - WASM
   - https://webassembly.org/
-- Mandelbrot implementation in Rust
-  - https://gist.github.com/jramb/2394146
-- Python Wasmer
+- Wasmer for Python
   - https://wasmer.io/posts/wasmer-python-embedding-1.0
   - https://github.com/wasmerio/wasmer-python/tree/master/examples/appendices
+- Mandelbrot implementation in Rust
+  - https://gist.github.com/jramb/2394146
 
 ## What is WASM?
 
