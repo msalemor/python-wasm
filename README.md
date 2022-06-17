@@ -2,6 +2,8 @@
 
 ## Credits
 
+- WASM
+  - https://webassembly.org/
 - Mandelbrot implementation in Rust
   - https://gist.github.com/jramb/2394146
 - Python Wasmer
@@ -10,7 +12,15 @@
 
 ## What is WASM?
 
-## What is WASMER?
+From the main site:
+
+"WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications."
+
+## What is WASMER for Python?
+
+From their docs:
+
+"The wasmer package brings the required API to execute WebAssembly modules. In a nutshell, wasmer compiles the WebAssembly module into compiled code, and then executes it. wasmer is designed to work in various environments and platforms: From nano single-board computers to large and powerful servers, including more exotic ones. To address those requirements, Wasmer provides 2 engines and 3 compilers."
 
 ## What can I gain from using WASM in Python
 
