@@ -121,7 +121,6 @@ fn mandelzahl(cx: Fl, cy: Fl, max: i32) -> i32 {
 pub extern "C" fn mandel(w: i32, h: i32, max: i32) -> *mut c_char {
     let step_h = 2.0 / h as Fl;
     let step_w = 3.0 / w as Fl;
-    //let mut res = String::from("");
     let mut output = b"".to_vec();
     for _h in 0..h {
         let y = -1.0 + ((_h as Fl) * step_h);
