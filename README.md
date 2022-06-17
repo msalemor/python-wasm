@@ -22,7 +22,7 @@ From the Wasmer for Python docs:
 
 "The wasmer package brings the required API to execute WebAssembly modules. In a nutshell, wasmer compiles the WebAssembly module into compiled code, and then executes it. wasmer is designed to work in various environments and platforms: From nano single-board computers to large and powerful servers, including more exotic ones. To address those requirements, Wasmer provides 2 engines and 3 compilers."
 
-## What can I gain from using WASM in Python
+## What can I gain from using WASM in Python?
 
 ### Performance
 
