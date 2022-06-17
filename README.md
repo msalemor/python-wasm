@@ -90,11 +90,6 @@ print("--- %s seconds ---" % (time.time() - start_time))
 ```Rust
 type Fl = f32; // f32 is slightly faster than f64
 
-//fn debugvar(s: String, v:int) {
-//// extern crate debug;
-//println!("Type of {} is {} [{:?}]", s, v, v);
-//}
-
 fn mandelzahl(cx: Fl, cy: Fl, max: i32) -> i32 {
     let mut zx = cx; // first iteration, normally starts with (0,0)
     let mut zy = cy;
