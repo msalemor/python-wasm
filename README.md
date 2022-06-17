@@ -46,6 +46,7 @@ Average Measurements:
 ## Maldebrot Python implementation calling WASM
 
 ```Python
+# main.py
 from wasmer import engine, Store, Module, Instance
 from wasmer_compiler_cranelift import Compiler
 import time
@@ -94,6 +95,7 @@ print("--- %s seconds ---" % (time.time() - start_time))
 ## Native Python Mandelbrot Implementation
 
 ```Python
+# mandelbrot.py
 from util import StringBuilder
 
 
@@ -137,6 +139,7 @@ def mandel(w: int, h: int, max: int):
 ```
 
 ```python
+# main.py
 import time
 import mandelbrot
 
