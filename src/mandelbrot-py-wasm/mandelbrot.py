@@ -34,14 +34,10 @@ module = Module(store, open('mandelbrot.wasm', 'rb').read())
 # Now the module is compiled, we can instantiate it.
 instance = Instance(module)
 
-# Call the exported `sum` function.
-result = instance.exports.sum(5, 37)
-
-print(result)  # 42!
-
+# Call the WASM Mandelbrot
 mandel_width = 140
 mandel_height = 50
-mandel_iterations = 100000
+mandel_iterations = 1000000
 mandel_out_ptr = instance.exports.mandel(
     mandel_width, mandel_height, mandel_iterations)
 mandel_memory = instance.exports.memory.uint8_view(mandel_out_ptr)
@@ -50,6 +46,13 @@ instance.exports.deallocate(mandel_out_ptr, out_size)
 
 print("--- %s seconds ---" % (time.time() - start_time))
 
+# Simple test
+# Call the exported `sum` function.
+result = instance.exports.sum(5, 37)
+
+print(result)  # 42!
+
+# More compplex test
 # Set the subject to greet.
 subject = bytes('Wasmer 🐍', 'utf-8')
 length_of_subject = len(subject)

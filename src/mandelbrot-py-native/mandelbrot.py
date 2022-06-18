@@ -1,4 +1,4 @@
-from util import StringBuilder
+from StringBuilder import StringBuilder
 
 
 def __mandelzahl(cx: float, cy: float, max: int):
@@ -21,7 +21,7 @@ def __mandelzahl(cx: float, cy: float, max: int):
         return i
 
 
-def mandel(w: int, h: int, max: int):
+def mandel(w: int, h: int, max: int) -> str:
     sb = StringBuilder()
     step_h = 2.0 / float(h)
     step_w = 3.0 / float(w)
@@ -32,9 +32,8 @@ def mandel(w: int, h: int, max: int):
             x = -2.0 + float(_w) * step_w
             mz = __mandelzahl(x, y, max)
             if mz > 0:
-                sb.Add('-')
+                sb.append('-')
             else:
-                sb.Add('*')
-        sb.Add("\n")
+                sb.append('*')
 
     return sb
