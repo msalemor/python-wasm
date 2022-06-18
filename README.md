@@ -50,6 +50,8 @@ Average Measurements:
 
 ## Maldebrot Python implementation calling WASM
 
+> Note: Full code available in the src folder
+
 ```Python
 # main.py
 from wasmer import engine, Store, Module, Instance
@@ -99,9 +101,11 @@ print("--- %s seconds ---" % (time.time() - start_time))
 
 ## Native Python Mandelbrot Implementation
 
+> Note: Full code available in the src folder
+
 ```Python
 # mandelbrot.py
-from util import StringBuilder
+from StringBuilder import StringBuilder
 
 
 def __mandelzahl(cx: float, cy: float, max: int):
@@ -135,10 +139,10 @@ def mandel(w: int, h: int, max: int):
             x = -2.0 + float(_w) * step_w
             mz = __mandelzahl(x, y, max)
             if mz > 0:
-                sb.Add('-')
+                sb.append('-')
             else:
-                sb.Add('*')
-        sb.Add("\n")
+                sb.append('*')
+        sb.append("\n")
 
     return sb
 ```
@@ -164,6 +168,8 @@ if __name__ == '__main__':
 ```
 
 ## Rust Mandelbrot WASM implementation
+
+> Note: Full code available in the src folder
 
 ```Rust
 type Fl = f32; // f32 is slightly faster than f64
