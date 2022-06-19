@@ -1,4 +1,6 @@
 from StringBuilder import StringBuilder
+from time import time
+from computational_stopwatch import Stopwatch
 
 
 def __mandelzahl(cx: float, cy: float, max: int):
@@ -38,3 +40,17 @@ def mandel(w: int, h: int, max: int) -> str:
         sb.append('\n')
 
     return sb.to_string()
+
+
+def main():
+
+    mandel_width = 140
+    mandel_height = 50
+    mandel_iterations = 100000
+
+    with Stopwatch():
+        print(mandel(mandel_width, mandel_height, mandel_iterations))
+
+
+if __name__ == '__main__':
+    main()
