@@ -1,4 +1,4 @@
-# Calling WASM from Python using WASMER
+# Calling WASM module from Python using WASMER
 
 ## Credits
 
@@ -30,6 +30,7 @@ System:
 - Inteil i7
 - 12 Cores
 - 32GB RAM
+- Windows 11 WSL
 
 Mandelbrot settings:
 
@@ -39,14 +40,14 @@ Mandelbrot settings:
 
 Average Measurements:
 
-- Native Python: 24 seconds
-- Using the WASM implenetation: 0.6 seconds
+- Python 3.10: 24 seconds
+- PyPy3: 0.7 seconds
+- Pytho 3.10 calling WASM: 0.6 seconds
 
 ### Portability
 
-- The WASM module can be run from any operating system 
-- It be embedded in different languages (C#, Javascript, Go, Java, etc.)
-
+- The WASM module is compatible across operating systems 
+- Modules compiled to WASM can be called from different languages
 
 ## Maldebrot Python implementation calling WASM
 
