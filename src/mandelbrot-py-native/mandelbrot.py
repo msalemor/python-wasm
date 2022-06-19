@@ -35,5 +35,6 @@ def mandel(w: int, h: int, max: int) -> str:
                 sb.append('-')
             else:
                 sb.append('*')
+        sb.append('\n')
 
-    return sb
+    return sb.to_string()
