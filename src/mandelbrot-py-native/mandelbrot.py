@@ -1,5 +1,4 @@
 from StringBuilder import StringBuilder
-from time import time
 from computational_stopwatch import Stopwatch
 
 
