@@ -42,7 +42,7 @@ Average Measurements:
 
 - Python 3.10: 24 seconds
 - PyPy3: 0.7 seconds
-- Pytho 3.10 calling WASM: 0.6 seconds
+- Python 3.10 calling WASM: 0.6 seconds
 
 ### Portability
 
